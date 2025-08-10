@@ -1,20 +1,28 @@
-# Real-Time Car Counting Based on Digital Image Processing
+# Real-Time Car Counting Using Digital Image Processing
 
 ---
 
 ## Project Overview
-This project implements a **real-time car counting system** using **Digital Image Processing**. The system monitors parking lots, identifies changes in regions of interest (ROIs), and dynamically counts vehicles. It is designed for efficiency, scalability, and ease of use in real-world applications.
-- **Real-Time Counting**: Dynamically displays car counts on video frames.
-- **ROI Monitoring**: Customizable grid-based ROI for flexible setups.
-- **Logging**: Logs detected changes to a file for tracking and analysis.
-- **Visual Overlays**: Displays ROI boundaries and car counts in real-time.
+
+This project presents a **real-time vehicle counting system** based on **digital image processing** techniques. Designed for monitoring parking lots and similar environments, the system detects changes within defined regions of interest (ROIs) and dynamically counts the number of cars present.
+
+Key features include:  
+- **Real-Time Counting:** Continuously updates and displays vehicle counts on live video frames.  
+- **Customizable ROI:** Grid-based ROI configuration allows flexible adaptation to different parking layouts.  
+- **Event Logging:** Records detected changes with timestamps for tracking and analysis.  
+- **Visual Overlays:** Highlights ROI boundaries and vehicle counts directly on the video stream.
 
 ---
 
 ## Prerequisites
-- Python 3.8 or higher
-- Libraries: OpenCV, NumPy
-Install the required libraries:
+
+- Python 3.8 or newer  
+- Required Python libraries:  
+  - OpenCV  
+  - NumPy  
+
+Install dependencies via pip:
+
 ```bash
 pip install opencv-python numpy
 ```
@@ -50,5 +58,5 @@ pip install opencv-python numpy
 ---
 
 ## Customization
-- **Grid and Cell Size**: Update `GRID_SIZE` and `CELL_SIZE` for your parking lot layout.
-- **Threshold**: Adjust the `THRESHOLD` value to fine-tune sensitivity for detecting changes.
+- **Grid Configuration**: Adjust GRID_SIZE and CELL_SIZE to align with your environment.
+- **Detection Sensitivity**: Modify the THRESHOLD parameter to control sensitivity for detecting changes in ROI.
